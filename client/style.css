@@ -1,0 +1,499 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* img {
+  max-width: 100%;
+} */
+
+body {
+  background-color: #f5f5f5;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+dialog {
+  border: none; /* Убираем границы */
+  box-shadow: rgba(0, 0, 0, 0.8); /* Убираем тень */
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный серый цвет фона */
+  z-index: 999; /* Устанавливаем z-index, чтобы затемнение находилось выше других элементов */
+}
+
+.padding-reset {
+  padding: 0;
+}
+
+.header__container {
+  display: flex;
+  max-width: 100%;
+  padding: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.title {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #333333;
+}
+
+.table__container {
+  margin-bottom: 30px;
+}
+
+.custom__table {
+  display: block;
+  width: 51%;
+  margin-bottom: 0;
+  opacity: 50%;
+}
+
+.form-label {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.header__logo {
+  margin-right: 53px;
+}
+
+.modal-box {
+  padding: 1rem; /* Увеличиваем внутренний отступ */
+  width: 450px; /* Задаем ширину */
+}
+
+a {
+  margin-right: 7px;
+}
+
+.txt-grey {
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #b0b0b0;
+  margin-left: 7px;
+}
+
+.custom-container {
+  width: 450px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  padding: 1.375rem 0.75rem;
+}
+
+.border-reset {
+  border: none;
+  border-bottom: none;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.form__input {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  padding: 5px 15px;
+}
+
+.select__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  margin-left: -29px;
+  margin-right: -29px;
+  margin-bottom: 25px;
+}
+
+.modal__title {
+  padding-left: 10px;
+}
+
+.edit__form {
+  padding-top: 25px;
+}
+
+.select__form-added {
+  padding: 20px 30px;
+}
+
+.select__form::after {
+  content: "";
+  background-color: #c8c5d1;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.select-group {
+  display: flex;
+  height: 37px;
+}
+
+.options-group {
+  background-color: #c8c5d1;
+}
+.options-group option {
+  background-color: #f4f3f6;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 123px;
+  font-size: 16px;
+}
+
+.add-contact-btn {
+  border: none;
+  width: 478px;
+  height: 33px;
+  display: block;
+  position: relative;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 25px;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.add-contact-btn::after {
+  content: "";
+  background-color: #c8c5d1;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.form__save-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12.5px 35px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  background-color: #9873ff;
+  margin-bottom: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.delete-client-btn {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  color: #333333;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  border-bottom: 1px solid #333333;
+}
+
+.form__bold {
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #333333;
+}
+
+.modal__title {
+  margin-bottom: 20px;
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form__title {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #333333;
+  text-align: center;
+  margin-right: 9px;
+}
+
+.form__title-add {
+  margin-right: auto;
+}
+
+.form__id {
+  margin-right: auto;
+}
+
+.add__client-btn {
+  padding: 12.5px 26.5px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #9873ff;
+  border: 1px solid #9873ff;
+  transition: all 0.3s ease; /* Плавная анимация на все свойства в течение 0.3 секунд */
+}
+
+.add__client-btn:hover {
+  border-color: #9873ff;
+  background-color: #b89eff;
+  color: #ffffff;
+}
+
+.add__client-btn:focus {
+  color: #ffffff;
+  border-color: #9873ff;
+  background-color: #8052ff;
+  outline: none;
+}
+
+.add__client-btn:active {
+  color: #c8c5d1;
+  background-color: transparent;
+  border-color: #c8c5d1;
+  outline: none;
+}
+
+.form__save-btn:hover {
+  border-color: #9873ff;
+  background-color: #b89eff;
+  color: #ffffff;
+}
+.form__save-btn:focus {
+  color: #ffffff;
+  border-color: #9873ff;
+  background-color: #8052ff;
+  outline: none;
+}
+.form__save-btn:active {
+  color: #ffffff;
+  background-color: #c8c5d1;
+  border-color: #c8c5d1;
+  outline: none;
+}
+
+.delete__form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.text {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 25px;
+}
+
+.edit-btn {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: inherit;
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: inherit;
+}
+
+.edit-link {
+  margin-right: 30px;
+}
+
+.edit-link,
+.edit-btn {
+  transition: all 0.3s ease; /* Плавная анимация на все свойства в течение 0.3 секунд */
+}
+
+.delete-link,
+.delete-btn {
+  transition: all 0.3s ease; /* Плавная анимация на все свойства в течение 0.3 секунд */
+}
+
+.add-contact-btn img {
+  opacity: 1;
+  transition: opacity 1s ease; /* Плавное изменение при hover и focus */
+}
+
+.add-contact-btn {
+  transition: all 0.3s ease;
+}
+
+/* Фокус-эффект для SVG */
+.add-contact-btn:focus img {
+  content: url("./img/addContactFocus.svg"); /* Замените путь на путь к новому изображению */
+}
+
+/* Дополнительные стили для текста внутри кнопки при hover и focus (пример) */
+.add-contact-btn:hover,
+.add-contact-btn:focus {
+  color: #9873ff;
+  outline: none;
+}
+
+.edit-link:hover {
+  color: #9873ff;
+}
+
+.delete-link:hover {
+  color: #f06a4d;
+}
+
+.edit-btn:focus {
+  outline: none;
+}
+.edit-btn:active {
+  outline: none;
+}
+.delete-btn:focus {
+  outline: none;
+}
+.delete-btn:active {
+  outline: none;
+}
+
+.edit-link img {
+  transition: content 0.3s ease; /* Плавное изменение при hover */
+}
+
+.edit-link:active img {
+  content: url("./img/editLoad.svg"); /* Замените путь на путь к новому изображению */
+}
+
+.delete-link:active img {
+  content: url("./img/deleteLoad.svg"); /* Замените путь на путь к новому изображению */
+}
+
+.edit__contact-btn {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.edit__contact-btn::after {
+  background-color: white;
+}
+
+.htooltip {
+  position: relative;
+}
+
+.htooltip span {
+  position: absolute;
+  /* Внешний вид нашего тултипа */
+  background-color: #333333;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin-left: -60px;
+  margin-top: -45px;
+  opacity: 0; /* Делаем его прозрачным */
+  padding: 7px 14px;
+  text-decoration: none;
+  visibility: hidden; /* И прячем */
+  z-index: 10;
+}
+
+.htooltip:hover span {
+  /* По hover отображаем тултип */
+  opacity: 1;
+  visibility: visible;
+}
+
+.add__form::after {
+  background-color: white;
+}
+
+.table thead th {
+  border: none;
+}
+
+.svg-image {
+  transition: all 0.3s ease; /* Плавное изменение при hover */
+}
+
+/* Hover-эффект для SVG */
+.svg-image:hover {
+  content: url("./img/delCurrentBtn.svg"); /* Замените путь на путь к новому изображению */
+}
+
+.active__sort {
+  color: #9873ff;
+}
